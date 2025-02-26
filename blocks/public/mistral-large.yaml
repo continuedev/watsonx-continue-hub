@@ -1,0 +1,17 @@
+name: Mistral Large
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Mistral Large
+    provider: watsonx
+    model: mistral-large
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - chat
+      - edit
+      - apply

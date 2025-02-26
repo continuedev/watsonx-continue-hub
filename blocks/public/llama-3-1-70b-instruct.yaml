@@ -1,0 +1,17 @@
+name: Llama 3.1 70b Instruct
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Llama 3.1 70b Instruct
+    provider: watsonx
+    model: llama-3-1-70b-instruct
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - chat
+      - edit
+      - apply

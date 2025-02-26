@@ -1,0 +1,17 @@
+name: Deepseek R1 Distill Llama 70b
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Deepseek R1 Distill Llama 70b
+    provider: watsonx
+    model: deepseek-r1-distill-llama-70b
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - chat
+      - edit
+      - apply

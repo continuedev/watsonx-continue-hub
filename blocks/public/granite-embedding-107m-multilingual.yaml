@@ -1,0 +1,14 @@
+name: Granite Embedding 107m Multilingual
+version: 1.0.0
+schema: v1
+models:
+  - name: Granite Embedding 107m Multilingual
+    provider: watsonx
+    model: granite-embedding-107m-multilingual
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - embed

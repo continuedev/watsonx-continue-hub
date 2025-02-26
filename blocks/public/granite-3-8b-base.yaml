@@ -1,0 +1,17 @@
+name: Granite 3 8b Base
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Granite 3 8b Base
+    provider: watsonx
+    model: granite-3-8b-base
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - chat
+      - edit
+      - apply

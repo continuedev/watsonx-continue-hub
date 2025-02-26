@@ -1,0 +1,17 @@
+name: Granite 13b Instruct V2
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Granite 13b Instruct V2
+    provider: watsonx
+    model: granite-13b-instruct-v2
+    apiBase: ${{ inputs.WATSONX_API_BASE }}
+    apiKey: ${{ inputs.WATSONX_API_KEY }}
+    env:
+      projectId: ${{ inputs.WATSONX_PROJECT_ID }}
+      apiVersion: ${{ inputs.WATSONX_API_VERSION }}
+    roles:
+      - chat
+      - edit
+      - apply
